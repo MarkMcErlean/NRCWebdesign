@@ -8,34 +8,66 @@
 <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="main.css">
+
+
+<script>	
+	function validateForm() {
+  var x = document.forms["contactReq"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+} 
+</script>
+	
 <title>Simple Software Solutions</title>
 </head>
 <body>
+	<!-- Navbar using bootstrap-->
+	<!-- First calling the navbar class from bootstrap with dark colour -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<!-- Adding in the logo to the navbar with a predetermined width and height -->
   <div class="container-fluid"> <a class="navbar-brand" href="index.html"><img src="../Images/logoImage2.png" width="80" height="80" alt="CompanyLogo"/></a>
+	  <!-- Defining the buttons on the navbar -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		 <!-- First button is Home -->
         <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
+		  <!-- second button shows previous projects -->
         <li class="nav-item"> <a class="nav-link" href="PrevProj.html">Previous Projects</a> </li>
+		  <!-- Dropdown list with two buttons -->
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> What We Do </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="softsol.html">Software Solutions</a></li>
-            <li><a class="dropdown-item" href="webdes.html">Website Design</a></li>
-            <!--<li><hr class="dropdown-divider"></li> -->
-            
-          </ul>
+            <li><a class="dropdown-item" href="SoftSol.html">Software Solutions</a></li>
+            <li><a class="dropdown-item" href="WebDes.html">Website Design</a></li>            
+          </ul> <!-- Closes the list of dropdowns on navbar -->
         </li>
+		  <!-- disabled button for future features -->
         <li class="nav-item"> <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Coming Soon - Pricing</a> </li>
+		  <!-- Button linking to FAQ page -->
         <li class="nav-item"> <a class="nav-link" href="FAQ.html">FAQ</a> </li>
-      </ul>
+      </ul> <!-- Closing the list of buttons on the navbar -->
     </div>
   </div>
 </nav>
+	<!-- Creating a container to center the page in a browser -->
 <div class="container">
-  <h1>This page is currently undergoing maintenence</h1>
-  <p>Please check back at a later date. We are sorry for any inconvenience.</p>
-  <img src="../Images/Maintenance.png" class="rounded mx-auto d-block" alt="A placeholder image" height="250" width="350"> </div>
+	
+	<!-- Informing user that they are on a new page -->
+  <h1>Your contact request is being processed!</h1>
+
+
+  <!-- Taking values from contact form and using them for a Thank message -->
+	<div class = "h3">Thank you  <span id="result"></span>! We will get in touch soon at <span id="result2"></span>! </div>
+  <!-- accepting the values from form on home page -->
+	<script>
+	document.getElementById("result").innerHTML=localStorage.getItem("namevalue");
+	document.getElementById("result2").innerHTML=localStorage.getItem("emailvalue");
+	</script>
+  	<!-- Placeholder image in the centre of the screen -->
+  <img src="../Images/EmailImage.png" class="rounded mx-auto d-block" alt="A placeholder image" height="250" width="250"> 
+</div>
 
 <!-- Bootstrap Bundle with Popper --> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
