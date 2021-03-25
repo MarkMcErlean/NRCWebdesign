@@ -11,54 +11,66 @@
 <title>Simple Software Solutions</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid"> <a class="navbar-brand" href="index.html"><img src="../Images/logoImage2.png" width="80" height="80" alt="CompanyLogo"/></a>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+  <!-- Adding in the logo to the navbar with a predetermined width and height -->
+  <div class="container-fluid"> <a class="navbar-brand" href="index.html"><img src="../Images/logoImage2.png" width="80" height="80" alt="CompanyLogo"/></a> 
+    <!-- Defining the buttons on the navbar -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- First button is Home -->
         <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
+        <!-- second button shows previous projects -->
         <li class="nav-item"> <a class="nav-link" href="PrevProj.html">Previous Projects</a> </li>
+        <!-- Dropdown list with two buttons -->
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> What We Do </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="softsol.html">Software Solutions</a></li>
-            <li><a class="dropdown-item" href="webdes.html">Website Design</a></li>
-            <!--<li><hr class="dropdown-divider"></li> -->
-            
+            <li><a class="dropdown-item" href="SoftSol.html">Software Solutions</a></li>
+            <li><a class="dropdown-item" href="WebDes.html">Website Design</a></li>
           </ul>
+          <!-- Closes the list of dropdowns on navbar --> 
         </li>
+        <!-- disabled button for future features -->
         <li class="nav-item"> <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Coming Soon - Pricing</a> </li>
+        <!-- Button linking to FAQ page -->
         <li class="nav-item"> <a class="nav-link" href="FAQ.html">FAQ</a> </li>
       </ul>
+      <!-- Closing the list of buttons on the navbar --> 
     </div>
   </div>
 </nav>
+<!-- Containter to Center website -->
 <div class="container">
   <h1>Web Development</h1>
   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
   <img src="../Images/placeholder.png" class="rounded mx-auto d-block" alt="A placeholder image" height="250" width="250">
   <h3> We can handle as much of the process as you want!</h3>
-  <div class="accordion" id="accordionExample">
+  <!-- Creating an Accordion table -->
+  <div class="accordion" id="accordionWeb"> 
+    <!-- Item one -->
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingOne">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Initial design phase </button>
       </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionWeb">
         <div class="accordion-body"> With us, you have as much say in the site as you want. You can provide a basic storyboard framework for the site you want, or, you can choose the hands off approach that we also offer! Some people prefer to stay totally hands off and we understand this. We can create several basic drafts so that it is easy for you to pick and choose whatever you want, without it affecting the price. <br>
         </div>
       </div>
     </div>
+    <!-- Item two -->
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Building the site </button>
       </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionWeb">
         <div class="accordion-body"> We will build the site according to your design. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Website Hosting </button>
         </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionWeb">
           <div class="accordion-body"> We also offer hosting services! Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus </div>
         </div>
       </div>

@@ -54,7 +54,7 @@
 	<!-- Creating a container to center the page in a browser -->
 <div class="container">
 	
-	<!-- Informing user that they are on a new page -->
+	<!-- Informing user that they are on a new page and that form has processed -->
   <h1>Your contact request is being processed!</h1>
 
 
@@ -62,10 +62,11 @@
 	<div class = "h3">Thank you  <span id="result"></span>! We will get in touch soon at <span id="result2"></span>! </div>
   <!-- accepting the values from form on home page -->
 	<script>
+		//storing values to result and result2
 	document.getElementById("result").innerHTML=localStorage.getItem("namevalue");
 	document.getElementById("result2").innerHTML=localStorage.getItem("emailvalue");
 	</script>
-  	<!-- Placeholder image in the centre of the screen -->
+  	<!-- email image in the centre of the screen -->
   <img src="../Images/EmailImage.png" class="rounded mx-auto d-block" alt="A placeholder image" height="250" width="250"> 
 </div>
 
